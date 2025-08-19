@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! 🚀  
 This portfolio showcases my projects, skills, and experience in **Full-Stack Development, AI (RAG), and Web Applications**.  
 
-🔗 **Live Portfolio**: [View Here](https://my-portfolio-butx.onrender.com.)  
+🔗 **Live Portfolio**: [View Here](https://my-portfolio-butx.onrender.com)  
 
 ---
 
