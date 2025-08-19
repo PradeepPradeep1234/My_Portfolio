@@ -1,0 +1,374 @@
+.navbar {
+      background-color: #000; /* Black navbar */
+      padding: 10px 20px;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff416c !important;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      position: relative;
+      margin-left: 15px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    /* Animated hover underline */
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color: red;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+      color: red !important;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Toggle button color */
+    .navbar-toggler {
+      border-color: red;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+     body {
+      background: #0d0d0d ;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      color: #f8f9fa;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ff3131; /* red accent */
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      max-width: 700px;
+    }
+
+    /* Typewriter */
+    .typewriter {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-top: 15px;
+      border-right: 3px solid #ff3131;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* Resume Button */
+    .download-btn {
+      margin-top: 25px;
+      background: #ff3131;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #fff;
+      color: #ff3131;
+      transform: scale(1.05);
+      box-shadow: 0px 0px 15px rgba(255, 49, 49, 0.7);
+    }
+    
+    .social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e50914; /* red hover */
+  transform: scale(1.2);
+}
+
+   
+
+  #about {
+    background-color: #0d0d0d ; /* dark theme */
+  }
+  #about h2 {
+  
+    letter-spacing: 2px;
+  }
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #e6e6e6;
+    background:#0d0d0d ;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+ 
+  .service-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  .service-card:hover {
+    border-color: #e50914;
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(229, 9, 20, 0.3);
+  }
+  .service-card h4 {
+    color: red;
+    margin-bottom: 10px;
+  }
+  .service-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  /* Skills Section */
+.skills {
+  padding: 80px 20px;
+  text-align: center;
+  background: #0d0d0d;
+}
+
+.skills .section-title {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  border-color: #e50914;
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(229, 9, 20, 0.3);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+#projects {
+  padding: 60px 20px;
+  background: #0d0d0d;
+  text-align: center;
+}
+
+.project-tabs {
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+.project-card:hover {
+  border-color: #e50914;
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(229, 9, 20, 0.3);
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card .tech {
+  color: #e50914;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+
+.project-card .links a {
+  color: #e50914;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project-card .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn-github {
+  background: #24292f;
+  color: #fff !important;
+  border: 1px solid #24292f;
+}
+
+.project-card .btn-github:hover {
+  background: transparent;
+  color: #1f242a;
+  border: 1px solid red;
+  box-shadow: 0 0 10px rgba(36, 41, 47, 0.6);
+}
+
+.project-card .btn-demo {
+  background: #e50914;
+  color: #fff !important;
+  border: 1px solid #e50914;
+}
+section h2{
+  color: #ff416c;
+}
+
+.project-card .btn-demo:hover {
+  background: transparent;
+  color: #e50914;
+  border: 1px solid #e50914;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.6);
+}
+.more-work-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #e50914, #ff4b2b);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-more:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3);
+}
+ #contact {
+    background-color: #0d0d0d;
+  }
+  .btn-custom {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  .btn-custom:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: translateY(-2px);
+  }
+  .contact-icon {
+    font-size: 2rem;
+    color: #ff416c;
+    transition: 0.3s;
+  }
+  .contact-icon:hover {
+    color: #ff4b2b;
+    transform: scale(1.2);
+  }
